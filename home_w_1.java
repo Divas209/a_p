@@ -78,5 +78,47 @@ public class home_w_1 {
 
 } 
 
+
+
+
+
+
+
+
+public class Main{
+    public static void main(String []args){
+        work(-60,2);
+        
+    }
+
+
+    public static void work(int _v, int _t){
+        int road = 109;
+        int vasya = 0;
+        int v = _v;
+        int t = _t;
+        int a = v*t;
+        if (a>road){
+            a -=(109*(a/road));
+        }
+        else{
+            a += (109*(a/road))*-1;
+        }
+        System.out.println(109 - a*-1);
+    }
+    public static void work2(int _h,int _a,int _b){
+        int h = _h;
+        int a = _a;
+        int b = _b;
+        int pos = 0;
+        for (int i = 0; pos<=h;i++){
+            pos +=a;
+            pos -=b;
+            System.out.println(i);
+        }
+        
+        
+    }
+}
 //javac home_w_1.java
 //java -classpath . home_w_1
